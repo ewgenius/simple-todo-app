@@ -18,7 +18,7 @@ export default function Home() {
     }
   }, []);
 
-  const items = Object.values(itemsDict);
+  const items = Object.values(itemsDict).reverse();
 
   const addTodo = (todo: Pick<Todo, "text">) =>
     dispatch({
